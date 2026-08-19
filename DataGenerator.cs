@@ -400,8 +400,8 @@ namespace DataGenerator
 
                 int num1a = MoonData.scrapMinValue[currentlevel.scrapType[typeSID]];
                 int num2a = MoonData.scrapMaxValue[currentlevel.scrapType[typeSID]];
-                int num1b = scrapAmount * Math.Max(num1a, 125); // raises value to 50
-                int num2b = scrapAmount * Math.Min(num2a, 425); // caps to value 170
+                int num1b = scrapAmount * Math.Clamp(num1a, 125, 425); // clamps to possible SID prices
+                int num2b = scrapAmount * Math.Clamp(num2a, 125, 425);
                 int num5 = 1500;
                 if (MoonData.twoHandedScrap.IndexOf(currentlevel.scrapType[typeSID]) != -1)
                 {
