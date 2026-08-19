@@ -7,4 +7,4 @@ These files are used for an adjacent project, a Lethal Company Website (listed o
 
 This is my first coding project of this kind, so expect messy code.
 
-Please let me know if there are any issues, mainly inaccuracies, with generating the LC seed data.
+Please let me know if there are any issues, mainly inaccuracies, with how this program generates the LC seed data.
